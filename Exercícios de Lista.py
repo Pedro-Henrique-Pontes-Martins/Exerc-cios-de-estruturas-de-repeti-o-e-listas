@@ -20,3 +20,16 @@ def calcularNotas(Lista):
     return média
 print('Média:')
 print(calcularNotas(Lista3))
+
+#Exercício 4:
+Lista4 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+def quantidadeDeConsoantes(Lista4):
+    consoantes = 0
+    contador = 0
+    for i in Lista4:
+        if (Lista4[contador] != "a" or Lista4[contador] != "e" or Lista4[contador] != "i" or Lista4[contador] != "o" or Lista4[contador] != "u"):
+            consoantes += 1
+        contador += 1
+    return consoantes
+print('Quantidade de consoantes:')
+print(quantidadeDeConsoantes(Lista4))
