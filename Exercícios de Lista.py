@@ -23,11 +23,12 @@ print(calcularNotas(Lista3))
 
 #Exercício 4:
 Lista4 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+ListaVogais = ["a","e","i","o","u"]
 def quantidadeDeConsoantes(Lista4):
     consoantes = 0
     contador = 0
     for i in Lista4:
-        if (Lista4[contador] != "a" or Lista4[contador] != "e" or Lista4[contador] != "i" or Lista4[contador] != "o" or Lista4[contador] != "u"):
+        if not Lista4[contador] in ListaVogais:
             consoantes += 1
         contador += 1
     return consoantes
